@@ -1,3 +1,3 @@
 
 public typealias Call = () -> Void
-public typealias Dispatch = (Action) -> Call
+public typealias Dispatch<Action> = (Action) -> Call
