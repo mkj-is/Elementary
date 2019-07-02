@@ -1,2 +1,2 @@
 
-protocol Action {}
+public protocol Action {}
