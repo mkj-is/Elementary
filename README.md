@@ -2,7 +2,7 @@
 
 **Elementary** is experimental, uni-directional and purely functional architecture in Swift.
 It is inspired by ELM and Redux. Main motivation behind this was the introduction of SwiftUI,
-but this core package is not dependent neither Combine or SwiftUI.
+but this core package does not depend on Combine or SwiftUI.
 
 ## Installation
 
