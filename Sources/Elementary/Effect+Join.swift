@@ -1,3 +1,4 @@
+
 public func join<State, Action>(effects: Effect<State, Action>...) -> Effect<State, Action> {
     join(effects: effects)
 }
