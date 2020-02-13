@@ -29,6 +29,19 @@ final class StopwatchTests: XCTestCase {
         wait(for: [expectation], timeout: 5)
     }
 
+    func testDoubleStart() {
+        let store = stopwatchStore()
+        XCTAssertEqual(0, store.state)
+        store.dispatch(.start)
+        store.dispatch(.start)
+        let expectation = self.expectation(description: "Stopwatch state will be checked in a few seconds.")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            XCTAssertGreaterThan(3, store.state)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 5)
+    }
+
     func testStop() {
         let store = stopwatchStore()
         XCTAssertEqual(0, store.state)
