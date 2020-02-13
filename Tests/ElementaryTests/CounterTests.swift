@@ -53,6 +53,6 @@ final class CounterTests: XCTestCase {
         ("testDecrement", testDecrement),
         ("testDecrementWhenZero", testDecrementWhenZero),
         ("testReset", testReset),
-        ("testActionSequence", testActionSequence),
+        ("testActionSequence", testActionSequence)
     ]
 }

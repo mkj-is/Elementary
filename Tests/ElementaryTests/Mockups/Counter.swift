@@ -4,7 +4,6 @@ enum CounterAction {
     case increment, decrement, reset
 }
 
-
 func updateCounter(state: inout Int, action: CounterAction) {
     switch action {
     case .increment:

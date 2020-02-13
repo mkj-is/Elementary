@@ -1,4 +1,3 @@
-
 public final class Store<State, Action> {
     public private(set) var state: State
     private let update: Update<State, Action>

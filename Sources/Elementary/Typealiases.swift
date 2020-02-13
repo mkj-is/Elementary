@@ -1,4 +1,3 @@
-
 public typealias Call = () -> Void
 public typealias Dispatch<Action> = (Action) -> Void
 public typealias Update<State, Action> = (inout State, Action) -> Void

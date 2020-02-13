@@ -5,7 +5,6 @@ enum StopwatchAction {
     case start, stop, increment, reset
 }
 
-
 func updateStopwatch(state: inout Int, action: StopwatchAction) {
     switch action {
     case .reset:
@@ -44,4 +43,3 @@ func stopwatchStore(state: Int = 0) -> Store<Int, StopwatchAction> {
         effect: createStopwatchEffect()
     )
 }
-

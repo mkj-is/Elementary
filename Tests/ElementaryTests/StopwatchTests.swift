@@ -46,7 +46,6 @@ final class StopwatchTests: XCTestCase {
         ("testIncrement", testIncrement),
         ("testReset", testReset),
         ("testStart", testStart),
-        ("testStop", testStop),
+        ("testStop", testStop)
     ]
 }
-
