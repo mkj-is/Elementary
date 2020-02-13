@@ -22,13 +22,12 @@ func createStopwatchEffect() -> Effect<Int, StopwatchAction> {
         switch action {
         case .start:
             timer = DispatchSource.makeTimerSource()
-            timer?.schedule(deadline: .now(), repeating: 1)
+            timer?.schedule(deadline: .now() + 1, repeating: 1)
             timer?.setEventHandler {
                 dispatch(.increment)
             }
             timer?.resume()
         case .stop, .reset:
-            timer?.cancel()
             timer = nil
         case .increment:
             break
